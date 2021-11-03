@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H12Video.html</title>
+</head>
+<body>
+    <h2>기본 Video 태그</h2>
+    <!-- 
+        Video태그
+        [속성]
+        autoplay : 로딩 시 자동으로 영상을 재생하는 설정
+            *현재는 사용자가 원할때만 재생하기 위해 지원되지 않음
+        controls : 동영상을 재생할 때 컨트롤바를 노출할 지 여부를 결정
+            *컨트롤바에는 볼륨조절, 프로그레스바, 전체화면 등의 기능이 있음
+     -->
+    <!-- <video src="media/video.mp4" autoplay controls
+        width="300" height="200">
+        해당 브라우저가 video 태그를 지원하지 않는 경우
+        <a href="media/video.mp4">여기</a>를 클릭하세요.
+    </video> -->
+
+    
+    <h2>video의 하위태그 source</h2>
+    <!-- 
+        source태그 : 웹브라우저가 모든 동영상 포맷으르 지원하지 않기 때문에
+            여러 항목 중 브라우저에서 지원하는 포맷(확장자)의 파일을를 찾아 재생한다.
+            즉 video태그에서 미디어파일을 여러개 설정할 때 사용하는 하위태그이다.
+     -->
+    <video autoplay controls width="300" height="200">
+        <source src="media/video.3gp"></source>
+        <source src="media/video.mp4"></source>
+
+        해당 브라우저가 video 태그를 지원하지 않는 경우
+        <a href="media/video.mp4">여기</a>를 클릭하세요.
+    </video>
+
+    <h2>Javascript를 이용한 커스텀 비디오 만들기</h2>
+    <!-- JS수업 이후 컴백꼼! -->
+
+</body>
+</html>

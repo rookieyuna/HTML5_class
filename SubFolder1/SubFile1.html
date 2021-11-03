@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브파일1</title>
+</head>
+<body>
+    <h2>서브파일1</h2>
+
+    <h3>상대경로로 링크 걸기</h3>
+    <ul>
+        <!-- 상위 경로로 이동하므로 ../으로 시작한다 -->
+        <li><a href="../H06A.html">
+            H06A.html 바로가기</a></li>
+        <!-- 하위 경로로 이동하므로 이동할 폴더명을 명시(./는 생략가능) -->
+        <li><a href="./SubFolder2/SubFile2.html"> 
+            서브파일 2바로가기</a></li>
+    </ul>
+
+    <h3>절대경로로 링크 걸기</h3>
+    <!-- 절대경로로 설정 시 현재위치와 상관없이 항상 전체 경로를 입력해야 한다-->
+    <ul>
+        <li><a href="/H06A.html">
+            H06A.html 바로가기</a></li>
+        <li><a href="/SubFolder1/SubFolder2/SubFile2.html">
+            서브파일 2바로가기</a></li>
+    </ul>
+</body>
+</html>

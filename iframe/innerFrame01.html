@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerFrame01.html</title>
+</head>
+<body>
+    <h2>innerFrame01 페이지</h2>
+
+    <!-- 
+        상위 부모페이지가 1개밖에 없으므로 _top, _parent는 동일한 페이지
+     -->
+    <h4>창의 이름 : innerWin01</h4>
+    <iframe src="innerFrame02.html" name="innerWin01"
+        width="300" height="200" frameborder="1" scrolling="auto"></iframe>
+
+    <p>
+        <a href="http://jobkorea.co.kr" target="_self">_self에서 이동</a>
+        <br>
+        <a href="http://daum.net" target="_parent">_parent에서 이동</a>
+        <br>
+        <a href="http://naver.com" target="_top">_top에서 이동</a>
+        <br>
+    </p>
+</body>
+</html>

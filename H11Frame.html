@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H11Frame.html</title>
+</head>
+<!-- 참고사이트 JAVA DOC : https://docs.oracle.com/javase/8/docs/api/ -->
+<!-- 
+    frameset : 페이지를 가로 혹은 세로로 나눠서 구성할 때 사용하는 태그
+        반드시 head와 body 사이에 기술해야하며 body 내에 기술하면 안된다.
+        [속성] rows(세로분할), cols(가로분할)
+    frame : frameset의 하위태그로 실제 표현할 페이지의 경로를 지정한다
+        [속성]
+        -src : 노출할 페이지의 URL혹은 경로
+        -noresize : 프레임의 크기를 마우스로 조정할 수 없도록 하는 옵션
+        -name : 타겟 설정 시 타겟대상으로 사용할 수 있는 값
+ -->
+<frameset rows="100px, *, 50px" border="5" frameborder="1">
+    <frame src="./frame/topFrame.html" name="topFrame"
+        scrolling="no" marginwidth="0" marginheight="0" noresize>
+    <frameset cols="300px,*" border="5" frameborder="1">
+        <frame src="./frame/leftFrame.html" name="leftFrame">
+        <frame src="./frame/contentFrame.html" name="contentFrame"></frame>
+    </frameset>
+    <frame src="./frame/bottomFrame.html" name="bottomFrame"
+        scrolling="no" marginwidth="0" marginheight="0" >
+</frameset>
+<noframes>이 브라우져는 프레임을 지원하지 않습니다.</noframes>
+
+<body>
+    프레임은 body태그 안으로 들어가면 안됩니다
+</body>
+</html>

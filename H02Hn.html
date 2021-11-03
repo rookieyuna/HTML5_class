@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H02Hn(Headline태그)</title>
+    <!-- 
+        CSS(Cascading Style Sheets)
+            :HTLM 문서에 스타일을 적용하기 위해 사용한다.
+            방법1] <head>영역에 <Sytle>태그를 선언한 후 해당 속성을 작성한다.
+            방법2] <body>영역의 스타일을 적용할 태그에 style 속성으로 적용한다.
+        
+        -아래 <style>은 h1, h2, span 태그 선택자를 통해 태그를 선택하여 스타일을 설정
+        -border는 테두리의 스타일을 지정하는 속성(두께, 모양, 색깔을 지정한다)
+     -->
+     
+    <style>
+        h1 { border:10px dotted pink;}
+        h2 { border:1px solid green;}
+        span { border:1px solid blue;}
+    </style>
+</head>
+<body>
+    <!-- 
+    hn태그
+        - 제목(헤드라인을) 표시하라 때 사용하는 태그
+        - 블럭엘리먼트(Block Element)로 세로형 배치
+        - 컨텐츠 크기에 상관없이 무조건 하나의 블럭을 차지
+        - h1~6까지 있고 숫자가 작을수록 텍스트를 크게 표현
+     -->
+    <h1>블럭엘리먼트1</h1>
+    <!-- 
+    span태그
+        - 인라인엘리먼트(Inline Element)로 가로형 배치
+     -->
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+
+    <h1>블럭앨리먼트2</h1>
+
+    <span>span태그1</span>
+    <span>span태그2</span>
+    <span>span태그3</span>
+
+    <hr>
+
+    <h1>제목1입니다.</h1>
+    <h2>제목2입니다.</h2>
+
+    <!-- 
+    border 속성 : 테두리를 표시하는 속성
+        - px로 두께 조절
+        - solid(실선), dotted(점선), double(이중실선)
+    text-align 속성 : 텍스트를 정렬하는 속성
+        - right, left, center
+    width/height 속성 : 가로/세로 크기를 결정하는 속성
+     -->
+    <h3 style="border:1px dotted purple;">제목3입니다.</h3>
+    <h4 style="text-align: right;">제목4입니다</h4>
+    <h5 style="text-align: center;">제목5입니다</h5>
+    <h6 style="border:2px double black; width:500px; height:300px;
+    background:yellow;">제목6입니다</h6>
+
+</body>
+</html>

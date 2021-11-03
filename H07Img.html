@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H07Img.html</title>
+</head>
+<body>
+    <!-- 
+        img 태그 : 웹브라우저에 이미지를 표시할 때 사용
+            - 형식 : <img src="이미지경로" alt="대체텍스트" />
+            - 인라인 엘리먼트
+     -->
+    <h1>img 태그</h1>
+
+    <h2>이미지를 원본크기대로 표시하기</h2>
+    <img src="./images/1.png" alt="스폰지밥"/>
+
+    <h2>이미지 크기설정</h2>
+    <!-- 가로크기만 정하면 이미지원본비율에 맞게 세로크기가 조정된다. -->
+    <img src="./images/1.png" width="100" alt="스폰지밥"/>
+    <!-- 가로세로 크기를 모두 지정하면 비율이 맞지 않은 이미지가 될 수있다. -->
+    <img src="./images/2.png" width="100" height="200" alt="징징이"/>
+    <!-- 대부분의 경우 웹디자인에서는 사이즈를 지정하지 않는다 -->
+    <img src="./images/2.png" alt="징징이"/>
+
+    <h2>이미지에 링크걸기</h2>
+    <a href="https://www.seoul.go.kr" target="_blank">
+        <img src="./images/logo.png" alt="로고" />
+    </a>
+
+    <h2>외부에 있는 이미지 가져오기</h2>
+    <!-- 외부이미지를 사용할 경우 http를 포함한 절대경로를 사용한다. -->
+    <a href="http://ikosmo.co.kr" target="_blank">
+        <img src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" 
+        alt="한국소프트웨어인재개발원" />
+    </a>
+
+<!-- 
+    이미지맵: 하나의 이미지에 여러 링크 사용하기
+        - shape 속성: rect(rectangle), circ(circle), poly(polygon)
+        - coords 속성 : rect(좌측위좌표,우측아래좌표), circle(중심점좌표,반지름), poly(모든꼭지점좌표)
+        map의 name 속성값과 img의 usemap속성값만 일치하면 선언 위치는 상관 없다.
+ -->
+
+    <h2>이미지맵 사용하기</h2>
+    <img src="./images/Map01.png" alt="이미지맵사용하기" usemap="#MyImage" />
+    <map name="MyImage">
+        <area shape="rectangle" coords="70,130,170,230" href="http://naver.com" alt="네이버">
+        <area shape="circle" coords="248,180,50" href="http://daum.net" alt="다음">
+        <area shape="polygon" coords="373,130,306,233,437,230,437,230" href="https://www.nate.com" target="_blank" />
+        <area shape="poly" coords="498,130,482,165,442,183,482,194,500,231,511,194,549,180,511,161" 
+            href="http://google.com" target="_blank" />
+    </map>
+    <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+
+</body>
+</html>

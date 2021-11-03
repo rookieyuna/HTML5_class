@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerFrame02 페이지</title>
+</head>
+<body>
+    <!-- 
+    자식페이지에서 부모페이지로 target을 걸때에는 기존값(_top,_parent)이나
+    프레임의 이름 둘 다 사용할 수 있다.
+
+    ※만약 target값이 찾을 수 없는 name인 경우에는 새창(_blank)으로 열린다.
+    (target iframe에 다른 페이지가 열려있으면 속성이 변경되어 name이 달라지므로
+    다시 호출하면 해당 iframe을 찾을 수 없기 때문에 새창으로 열린다.)
+     -->
+    <a href="http://nate.com" target="_self">_self</a>
+    <br>
+    <a href="http://ikosmo.co.kr" target="_parent">_parent</a>
+    <br>
+    <a href="http://daum.net" target="_top">_top</a>
+    <br>
+    <a href="http://jobkorea.co.kr" target="topWin">topWin</a>
+    <br>
+</body>
+</html>

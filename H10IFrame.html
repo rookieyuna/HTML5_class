@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H10IFrame.html</title>
+</head>
+<body>
+    <!-- 
+    iframe 태그 : inline frame으로 페이지내에 또 다른 페이지를 삽입할 때 사용
+        인라인엘리먼트(가로형배치)   
+    [주요속성]
+        -src : 프레임 안에 내용을 구성할 문서경로 혹은 url 삽입
+        -scrolling : 프레임의 내용에 따라 스크롤바 생성여부 결정 (auto,yes,no)
+        -frameborder : 프레임 테두리 두께
+        -name : 프레임 이름. a태그에서 링크호출 시 target의 대상으로 사용 가능
+
+        <a href="..." target ="_self"
+                              "_parent"
+                              "_top"
+                              "[iframe의 name속성]"
+     -->
+    <h4>iFrame의 이름 : topWin</h4>
+    <iframe src="./iframe/innerFrame01.html" name="topWin" frameborder="1"
+        width="500" height="500" scrolling="auto"></iframe>
+
+
+    <h2>iframe Bottom(하단)</h2>
+    <!-- 
+        부모페이지에서 자식페이지로 링크를 걸 때 target을 지정해야 한다면
+        프레임의 이름을 사용한다.
+     -->
+    <p>
+        <a href="http://daum.net" target="topWin">tobWin에서 이동함</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="http://nate.com" target="innerWin01">innerWin01에서 이동함</a>
+    </p>
+</body>
+</html>
+
+
+docs.oracle.com/javase/8/docs/api

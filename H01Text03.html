@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H01Text03-특수문자</title>
+</head>
+<body>
+    <h2>특수기호 사용하기</h2>
+
+    <h3>스페이스</h3>
+    스페이스는 &amp;nbsp; 를 사용합니다.
+
+    <!-- 
+        &lt : <
+        &gt : >
+     -->
+    <h3>꺽쇄괄호</h3>
+    태그는 항상 &lt;로 시작해서 &gt;로 마무리 합니다.
+
+    <h3>엠퍼센트와 카피라이트</h3>
+    엠퍼센트는 &amp;로 표현한다. 카피라이트는 &copy;로 표현한다.
+    <br>&copy; KOSMO
+
+    <h3>쌍따옴표와 홑따옴표</h3>
+    JAVA에서 문자열을 표현할 때는 &quot;문자열&quot; 형태로 사용하고<br>
+    문자를 표현할 때는 &apos;문자&apos;형태로 사용한다. <br>
+    참고 : &apos;는 IE(인터넷익스플로어)에서 사용이 불가능하다.
+
+    <h2>문자 포맷을 웹브라우저에 그대로 표현</h2>
+    <!-- <pre> Java코드와 같이 정렬된 상태의 텍스트를 웹브라우저에 
+    표현할 때 사용한다. 엔터, 공백 등을 삽입된 내용 그대로 출력된다.-->
+    <pre>
+public class HelloWorld 
+{	
+    public static void main(String[] args) 
+    {		
+        System.out.println("안녕하세요?");		
+        System.out.println("HelloWorld..!!");
+        System.out.println("와우~~git연동");
+    }	
+}
+    </pre>
+</body>
+</html>

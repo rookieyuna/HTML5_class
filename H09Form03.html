@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H09Form03.html</title>
+</head>
+<body>
+    <h2>input 태그의 버튼속성</h2>
+
+    <fieldset>
+        <!-- form태그만 선언하고 속성을 입력하지 않으면
+            action의 default는 현재페이지
+            method는 default는 get방식-->
+        <form action="">
+            <!-- 
+                [value 속성의 특징]
+                -text타입: 입력상자에 사용자가 입력할 수 있으므로 value값이 필수가
+                    아니며 value값을 지정하더라도 차후 값을 변경할 수 있음
+                -checkbox, radio타입: 추후 입력이 불가능하므로 반드시 미리 value값을 
+                    지정해야 함. value값이 없으면 서버로 값이 전송되지 않음
+
+             -->
+            이름: <input type="text" name="name" value="코스모">
+            <br>
+            직업: <input type="radio" name="job" valus="S" checked> 학생
+            &nbsp;&nbsp; <input type="radio" name="job" valus="T"> 강사
+            <br>
+            자기소개: 
+            <textarea name="intro" cols="50" rows="5">내용은 여기에 입력됩니다.</textarea>
+            <br>
+             <!-- 
+                 image타입/submit타입은 둘 다 폼값을 서버로 전송한다.
+                 단, image인 경우 커스텀 이미지를 사용하여 버튼을 표현할 수 있다.
+                 또한, 버튼을 클릭하지 않고 엔터만 눌러도 즉시 전송된다.
+              -->
+            <input type="image" src="./images/button.jpg">
+            <br>
+            <input type="submit"value="전송">
+            <br>
+            <!-- 
+                reset타입 : 폼의 초기입력상태로 되돌려준다 (모든내용이 삭제되는 개념은 아님) 
+             -->
+            <input type="reset"value="리셋">
+            <br>
+
+            <!-- 
+                button타입
+                -button태그의 버튼타입과 input태그의 버튼타입은 동일함
+                -기본동작기능이 없기 때문에 주로 이벤트핸들러(onclick 속성 등)와
+                    javascript 함수를 연동하여 사용한다.
+             -->
+            <button type="button" onclick="alert('경고창입니다.');">
+                버튼타이틀</button>
+            <br>
+            <input type="button" onmouseover="alert('마우스올렸나요?');"
+                value="MouseOver이벤트"> &nbsp;&nbsp;
+            <input type="button" onmouseout="alert('마우스내렸나요?');"
+            value="MouseOut이벤트">
+        </form>
+    </fieldset>
+    <br><br><br><br><br><br><br>
+</body>
+</html>

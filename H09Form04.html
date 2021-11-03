@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H09Form04.html</title>
+</head>
+<body>
+    <h2>HTML5에서 지원하는 input의 다양한 속성</h2>
+
+    <form action="" method="get" name="frm">
+    <table cellpadding="10" cellspacing="1" border="1" width="800">
+    <colgroup>
+        <col width="40%">
+        <col width="*">
+    </colgroup>
+    <!-- placeholder: 입력된 내용이 없을 때 입력상자의 가이드 역할 -->
+        <tr>
+            <td>placeholder : 텍스트박스의 힌트 표시</td>
+            <td>
+                <input type="text" placeholder="힌트를 표시">
+            </td>
+        </tr>
+        <!-- input태그에 페이지가 로딩될 때 focus 이벤트가 발생되도록 처리. 
+             주로 로그인 페이지에 사용됨 -->
+        <tr>
+            <td>autofocus : 입력커서 표시하기</td>
+            <td>
+                <input type="text" autofocus size="40" placeholder="페이지 로딩시 커서표시">
+            </td>
+        </tr>
+        <!-- 폼값을 submit할 때 빈값이 전송되면 경고 -->
+        <tr>
+            <td>required : 필수 입력사항 설정</td>
+            <td>
+                <input type="text" required>
+            </td>
+        </tr>
+        <!-- 페이지가 로딩될 때 focus를 얻었을 때 스핀박스가 생성된다. 숫자를 업/다운 할 수 있다. --> -->
+        <tr>
+            <td>type="number" : 숫자를 스핀박스를 이용하여 입력</td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <!-- 슬라이드 바를 이용해서 숫자를 입력할 수 있다 
+                min(최소값), max(최대값), step(증감범위값) -->
+        <tr>
+            <td>type="range"</td>
+            <td>
+                <input type="range" value="3" min="1" max="10" step="1" name="rangeNum">
+            </td>
+        </tr>
+        <!-- 컬러피커(color picker)를 띄워서 색상을 선택할 수 있게 하는 타입
+            선택한 색은 16진수 색상코드로 반환된다. -->
+        <tr>
+            <td>type="color"</td>
+            <td>
+                <input type="color" name="colorCode" >
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #466ae6;">
+                <button type="submit">전송하기</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
