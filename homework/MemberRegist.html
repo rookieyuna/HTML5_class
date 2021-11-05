@@ -8,50 +8,51 @@
     
     <style>
         *{
-            font-size: 14px; font-family: sans-serif;
+            font-size: 13px; font-family: sans-serif;
             margin: 3px;
             border-spacing: 1px;
         }
         span{
             font-size: 12px; color:rgb(119, 119, 119);
         }
-        button{
+        td{
+            padding: 7px;
+        }
+        input[type='text'], input[type='password'], select{
+            border: 1px solid rgb(187, 187, 187);
+        }
+        select {
+            width : 200px;
+        }
+        td button{
+            font-size: 11px; font-weight: normal;
+            background-color: #464646; color: white;
+            cursor: pointer;
+        }
+        div button{
             font-weight: bold;
             font-size: 14px;
             width:120px; height:30px;
             border: 0px;
             border-radius: 3px;
-            background-color: rgb(90, 90, 90); color: white;
+            background-color: #464646; color: white;
+            cursor: pointer;
         }
-        td{
-            padding: 5px;
-        }
-        td button{
-            font-size: 10px; font-weight: normal;
-            width:60px; height:20px;
-            
-            border-radius: 0px;
-        }
-        input{
-            border: 1px solid rgb(187, 187, 187);
-        }
-
     </style>
-
 
 </head>
 <body>
-    <fieldset style="width: 700px;">
+    <fieldset style="width: 670px;">
     <form action="">
-    <span style="float: right;">* 필수입력</span><br>
-    <table style="background-color: rgb(196, 196, 196); text-align: left; 
-        width: 700px;">
+    <span style="float: right;" class="required"><span style="color: red;">*</span> 필수입력</span><br>
+    <table style="background-color: rgb(196, 196, 196); width: 670px;">
         <colgroup>
             <col style ="background-color: rgb(211, 211, 211); width: 20%;">
-            <col style ="background-color: white; width: *">
+            <col style ="background-color: white;">
         </colgroup>
         <tr>
-            <th>* 아이디</th>
+            <td>
+                <span style="color: red;">*</span> 아이디</td>
             <td >
                 <input type="text" name="user_id">
                 <button type="button" >중복확인</button>
@@ -59,26 +60,29 @@
             </td>
         </tr>
         <tr>
-            <th>* 비밀번호</th>
+            <td>
+                <span style="color: red;">*</span> 비밀번호</td>
             <td>
                 <input type="password" name="user_pwd" size="12">
             </td>
         </tr>
         <tr>
-            <th>* 비밀번호 확인</th>
+            <td>
+                <span style="color: red;">*</span> 비밀번호 확인</td>
             <td>
                 <input type="password" name="user_pwd" size="12">
                 <span>(확인을 위해 다시 입력해 주세요.)</span>
             </td>
         </tr>
         <tr>
-            <th>* 이름</th>
+            <td>
+                <span style="color: red;">*</span> 이름</td>
             <td>
                 <input type="text" name="user_name" size="14">
             </td>
         </tr>
         <tr>
-            <th> 생년월일</th>
+            <td> 생년월일</td>
             <td>
                 <input type="radio" name="sexchoice" value="man" checked>남자
                 <input type="radio" name="sexchoice" value="woman">여자
@@ -90,7 +94,8 @@
             </td>
         </tr>
         <tr>
-            <th rowspan="2">* 이메일</th>
+            <td rowspan="2" class="required">
+                <span style="color: red;">*</span> 이메일</td>
             <td>
                 <input type="text" name="email_id" size="8" required>@
                 <input type="text" name="email_site" size="12" required>
@@ -114,7 +119,7 @@
             </td>
         </tr>
         <tr>
-            <th rowspan="3">주소</th>
+            <td rowspan="3">주소</td>
             <td>
                 <button type="button" >주소찾기</button>
                 <input type="text" name="postCode" size="5">
@@ -135,7 +140,7 @@
             </td>
         </tr>
         <tr>
-            <th>전화번호</th>
+            <td>전화번호</td>
             <td>
                 <input type="text" name="phone1-1" size="3" maxlength="3">-
                 <input type="text" name="phone1-2" size="4" maxlength="4">-
@@ -143,7 +148,8 @@
             </td>
         </tr>
         <tr>
-            <th>* 휴대전화</th>
+            <td>
+                <span style="color: red;">*</span> 휴대전화</td>
             <td>
                 <input type="text" name="phone2-1" size="3" maxlength="3">-
                 <input type="text" name="phone2-2" size="4" maxlength="4">-
@@ -154,7 +160,8 @@
             </td>
         </tr>
         <tr>
-            <th>* 관심분야</th>
+            <td>
+                <span style="color: red;">*</span> 관심분야</td>
             <td>
                 <select name="interest" required>
                     <option value="default">:: 관심분야 선택 ::</option>
@@ -167,7 +174,8 @@
             </td>
         </tr>
         <tr>
-            <th>* 가입경로</th>
+            <td>
+                <span style="color: red;">*</span> 가입경로</td>
             <td>
                 <select name="route" required>
                     <option value="default">:: 가입경로 선택 ::</option>
@@ -181,7 +189,7 @@
     </table>
     <div style="text-align: center;">
     <button type="submit" style="background-color: red;" >등록하기</button>
-    <button type="reset">새로입력</button>
+    <button type="reset">새로 쓰기</button>
     </div>
     </form>
     </fieldset>

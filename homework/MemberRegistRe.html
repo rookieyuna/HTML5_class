@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tdTitle{
+            font-weight: bold; padding:10px;
+            background-color: #E4E6E9;
+        }
+        .tdContent{
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        input{
+           border: 1px solid #afafaf;
+        }
+        input[type='button']{
+            background-color: #464646; color: white;
+        }
+    </style>
+</head>
+<body>
+    <table width="670px" style="background-color: silver; border-spacing: 1px;">
+    <colgroup>
+        <col width="20%">
+        <col width="80%">
+    </colgroup>
+        <tr>
+            <td class="tdTitle">
+                <span style="color: red;">*</span>아이디
+            </td>
+            <td class="tdContent">
+                <input type="text" size="15">
+                <input type="button" value="중복확인" >
+                <button type="button">중복확인</button>
+                + 4~15자, 첫 영문자, 영문자와 숫자 조합
+            </td>
+        </tr>
+        <tr>
+            <td class="tdTitle">
+                <span style="color: red;">*</span>비밀번호
+            </td>
+            <td class="tdContent">
+                <input type="text" size="12">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdTitle">
+                <span style="color: red;">*</span>비밀번호 확인
+            </td>
+            <td class="tdContent">
+                <input type="text" size="12">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdTitle">
+                <span style="color: red;">*</span>이름
+            </td>
+            <td class="tdContent">
+                <input type="text" size="15">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdTitle">
+                생년월일
+            </td>
+            <td class="tdContent">
+                <input type="radio" name="choice1" value="M">남자
+                <input type="radio" name="choice1" value="W">여자
+                &nbsp;&nbsp;
+                <input type="text" size="4">년
+                <input type="text" size="2">월
+                <input type="text" size="2">일 (예, 2000년 01월 31일)
+            </td>
+        </tr>
+        <tr>
+            <td class="tdTitle" rowspan="3">
+                </span>주소
+            </td>
+            <td class="tdContent">
+                <input type="button" value="우편번호">
+                <input type="text" size="5">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdContent">
+                <input type="text" size="68">
+            </td>
+        </tr>
+        <tr>
+            <td class="tdContent">
+                <input type="text" size="55"> +나머지주소
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tdTitle">
+                <span style="color: red;">*</span>관심분야
+            </td>
+            <td class="tdContent">
+                <select name="" id="" style="width: 200px;">
+                    <option value="">::: 관심분야선택 :::</option>
+
+                </select>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
